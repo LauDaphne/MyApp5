@@ -2,17 +2,35 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/bttnToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"
+        android:text="@string/bttnToast"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bttnNotify"
+        app:layout_constraintEnd_toEndOf="@+id/bttnNotify"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/bttnNotify"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bttnNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/bttnNotify"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttnToast" />
 </androidx.constraintlayout.widget.ConstraintLayout>
