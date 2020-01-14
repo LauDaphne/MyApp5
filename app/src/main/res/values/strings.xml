@@ -3,4 +3,22 @@
     <string name="tittlePrinc">Inicio</string>
     <string name="bttnToast">Crea tu Toast</string>
     <string name="bttnNotify">Crea tu Notificación</string>
+    <string name="lblTextoToast">Escribe aquí el mensaje que quieres mostrar en tu Toast:</string>
+    <string name="lblAlingVert">Elige una alineación vertical:</string>
+    <string name="lblAlingHor">Elige una alineación horizontal:</string>
+    <string name="lblArriba">Arriba</string>
+    <string name="lblCentro">Centro</string>
+    <string name="lblAbajo">Abajo</string>
+    <string name="lblDerecha">Derecha</string>
+    <string name="lblMedio">Medio</string>
+    <string name="lblIzquierda">Izquierda</string>
+    <string name="tittleToast">Configurar Toast</string>
+    <string name="lblDesplVertical">Desplazamiento vertical:</string>
+    <string name="lblDesplHorizontal">Desplazamiento horizontal:</string>
+    <string name="bttnMostrar">Mostrar</string>
+    <string name="tittleNotificacion">Configurar Notificación</string>
+    <string name="bttnEnviar">Enviar</string>
+    <string name="lblTituloNotify">Titulo de la notificación:</string>
+    <string name="lblMensajeNotify">Mensaje de la notificación:</string>
+    <string name="lbltiempoNotify">Tiempo de espera para mostrar (segundos):</string>
 </resources>

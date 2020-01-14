@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityToast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    tools:context=".ToastActivity">
+
+    <TextView
+        android:id="@+id/tituloToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bttnToast"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/lblTextoToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lblTextoToast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloToast" />
+
+    <EditText
+        android:id="@+id/txtToast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/lblTextoToast"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/lblTextoToast"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoToast" />
+
+    <TextView
+        android:id="@+id/lblAlingVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lblAlingVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtToast"
+        app:layout_constraintTop_toBottomOf="@+id/txtToast" />
+
+    <RadioGroup
+        android:id="@+id/alingVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/alingVertAbajo"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtToast"
+        app:layout_constraintStart_toStartOf="@+id/txtToast"
+        app:layout_constraintTop_toBottomOf="@+id/lblAlingVert">
+
+        <RadioButton
+            android:id="@+id/alingVertArriba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblArriba" />
+
+        <RadioButton
+            android:id="@+id/alingVertCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/lblCentro" />
+
+        <RadioButton
+            android:id="@+id/alingVertAbajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lblAbajo" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblAlingHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lblAlingHor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblAlingVert"
+        app:layout_constraintTop_toBottomOf="@+id/alingVertical" />
+
+    <RadioGroup
+        android:id="@+id/alingHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/alingHorMedio"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAlingHor">
+
+        <RadioButton
+            android:id="@+id/alingHorIzq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblIzquierda" />
+
+        <RadioButton
+            android:id="@+id/alingHorMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/lblMedio" />
+
+        <RadioButton
+            android:id="@+id/alingHorDerecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lblDerecha" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblDespVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lblDesplVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblAlingHor"
+        app:layout_constraintTop_toBottomOf="@+id/alingHorizontal" />
+
+    <EditText
+        android:id="@+id/txtDespVert"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDespVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/lblDespVert"
+        app:layout_constraintTop_toTopOf="@+id/lblDespVert" />
+
+    <TextView
+        android:id="@+id/lblDespHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lblDesplHorizontal"
+        app:layout_constraintStart_toStartOf="@+id/lblDespVert"
+        app:layout_constraintTop_toBottomOf="@+id/lblDespVert" />
+
+    <EditText
+        android:id="@+id/txtDespHor"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDespHor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/lblDespHor"
+        app:layout_constraintTop_toTopOf="@+id/lblDespHor" />
+
+    <Button
+        android:id="@+id/bttnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/bttnMostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDespHor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
